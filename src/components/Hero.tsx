@@ -78,7 +78,7 @@ const Hero = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative">
               <img 
-                src="/lovable-uploads/35946303-17b8-45eb-8533-a7cad8118d0e.png" 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                 alt="Mulher feliz usando smartphone com conexão de alta velocidade"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

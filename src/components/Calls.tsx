@@ -45,7 +45,7 @@ const Calls = () => {
           {/* Right Image */}
           <div className="relative">
             <img 
-              src="/lovable-uploads/c7cf82bd-7c1d-4f4b-b42c-5685606a162c.png" 
+              src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
               alt="Mulher sorrindo ao telefone"
               className="w-full h-auto rounded-lg"
             />

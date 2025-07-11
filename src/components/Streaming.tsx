@@ -19,7 +19,7 @@ const Streaming = () => {
           <div className="relative animate-slide-in-left">
             <div className="relative">
               <img 
-                src="/lovable-uploads/4a97ce43-789f-4606-944e-7e10c403693d.png" 
+                src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                 alt="Pessoa assistindo streaming com qualidade 4K"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
