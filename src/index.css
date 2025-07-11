@@ -5,32 +5,32 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 0%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
 
     --primary: 51 100% 50%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --accent: 51 100% 50%;
     --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
     --ring: 51 100% 50%;
 
     --radius: 0.5rem;
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-inspire-black text-inspire-white font-montserrat;
+    @apply bg-white text-black font-montserrat;
     scroll-behavior: smooth;
   }
 
@@ -53,22 +53,16 @@
 }
 
 @layer components {
-  .gradient-text {
-    @apply bg-gradient-to-r from-inspire-neon to-yellow-300 bg-clip-text text-transparent;
-  }
-
-  .neon-glow {
-    box-shadow: 0 0 10px #FFD500, 0 0 20px #FFD500, 0 0 30px #FFD500;
-  }
-
-  .glass-effect {
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(255, 213, 0, 0.3);
+  .yellow-gradient {
+    background: linear-gradient(135deg, #FFD500 0%, #FFC107 100%);
   }
 
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 20px rgba(255, 213, 0, 0.15);
   }
 }
 
@@ -78,7 +72,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
