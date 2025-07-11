@@ -5,7 +5,6 @@ import Benefits from '@/components/Benefits';
 import Streaming from '@/components/Streaming';
 import Calls from '@/components/Calls';
 import Plans from '@/components/Plans';
-import Coverage from '@/components/Coverage';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -18,7 +17,6 @@ const Index = () => {
       <Streaming />
       <Calls />
       <Plans />
-      <Coverage />
       <Contact />
       <Footer />
     </div>

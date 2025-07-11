@@ -1,59 +1,95 @@
 
-import { Play, Gamepad2, Phone } from 'lucide-react';
+import { Play, Gamepad2, Phone, ArrowRight, Wifi, Zap } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="pt-24 pb-16 yellow-gradient">
-      <div className="container mx-auto px-4">
+    <section id="inicio" className="pt-24 pb-16 yellow-gradient relative overflow-hidden">
+      {/* Background animated elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 animate-bounce">
+          <Wifi className="w-12 h-12 text-black" />
+        </div>
+        <div className="absolute top-40 right-20 animate-pulse">
+          <Zap className="w-8 h-8 text-black" />
+        </div>
+        <div className="absolute bottom-20 left-1/4 animate-spin">
+          <div className="w-6 h-6 border-2 border-black rounded-full border-t-transparent"></div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div>
-            <h1 className="text-4xl lg:text-5xl font-black text-black mb-6 leading-tight">
-              A Inspire tem planos especiais para você e toda a sua família ficar conectada!
+          <div className="animate-slide-in-left">
+            <div className="mb-6">
+              <span className="inline-block bg-black text-inspire-yellow px-4 py-2 rounded-full text-sm font-bold animate-pulse">
+                🚀 Internet de Alta Velocidade
+              </span>
+            </div>
+            
+            <h1 className="text-4xl lg:text-6xl font-black text-black mb-6 leading-tight">
+              Conecte-se com a
+              <span className="block text-transparent bg-gradient-to-r from-black to-gray-700 bg-clip-text">
+                velocidade do futuro
+              </span>
             </h1>
 
-            {/* Benefits Cards */}
+            <p className="text-xl text-black mb-8 opacity-80">
+              Planos especiais para você e toda sua família ficarem conectados com a melhor internet da região.
+            </p>
+
+            {/* Stats Cards */}
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <div className="bg-inspire-yellow border-2 border-black rounded-lg p-4 text-center">
+              <div className="bg-white/20 backdrop-blur-sm border-2 border-black rounded-xl p-4 text-center hover:scale-105 transition-transform">
                 <Play className="w-8 h-8 mx-auto mb-2 text-black" />
-                <p className="text-black font-medium text-sm">
-                  Baixe arquivos + rápido e assista vídeos com + resolução.
+                <p className="text-black font-bold text-sm">
+                  Streaming 4K sem travamentos
                 </p>
               </div>
               
-              <div className="bg-inspire-yellow border-2 border-black rounded-lg p-4 text-center">
+              <div className="bg-white/20 backdrop-blur-sm border-2 border-black rounded-xl p-4 text-center hover:scale-105 transition-transform">
                 <Gamepad2 className="w-8 h-8 mx-auto mb-2 text-black" />
-                <p className="text-black font-medium text-sm">
-                  Jogue online com + desempenho e velocidade.
+                <p className="text-black font-bold text-sm">
+                  Gaming com ping ultra baixo
                 </p>
               </div>
               
-              <div className="bg-inspire-yellow border-2 border-black rounded-lg p-4 text-center">
+              <div className="bg-white/20 backdrop-blur-sm border-2 border-black rounded-xl p-4 text-center hover:scale-105 transition-transform">
                 <Phone className="w-8 h-8 mx-auto mb-2 text-black" />
-                <p className="text-black font-medium text-sm">
-                  Ligações ilimitadas para fixo, móvel e DDD
+                <p className="text-black font-bold text-sm">
+                  Ligações ilimitadas incluídas
                 </p>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-black text-inspire-yellow px-8 py-3 rounded font-bold hover:bg-gray-800 transition-colors flex-1">
-                PLANOS
+              <button className="group bg-black text-inspire-yellow px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
+                <span>VER PLANOS</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="bg-black text-inspire-yellow px-8 py-3 rounded font-bold hover:bg-gray-800 transition-colors flex-1">
-                COBERTURA
+              <button className="border-2 border-black text-black px-8 py-4 rounded-xl font-bold hover:bg-black hover:text-inspire-yellow transition-all duration-300">
+                FALAR COM CONSULTOR
               </button>
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="relative">
-            <img 
-              src="/lovable-uploads/35946303-17b8-45eb-8533-a7cad8118d0e.png" 
-              alt="Mulher feliz usando smartphone com sinal WiFi"
-              className="w-full h-auto rounded-lg"
-            />
+          <div className="relative animate-slide-in-right">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/35946303-17b8-45eb-8533-a7cad8118d0e.png" 
+                alt="Mulher feliz usando smartphone com conexão de alta velocidade"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 bg-black text-inspire-yellow p-3 rounded-full animate-bounce">
+                <Wifi className="w-6 h-6" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-inspire-yellow text-black p-3 rounded-full animate-pulse">
+                <Zap className="w-6 h-6" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
