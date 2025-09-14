@@ -111,13 +111,18 @@ const Plans = () => {
               </div>
 
               {/* CTA Button */}
-              <button className={`w-full py-4 rounded-xl font-bold transition-all duration-300 mb-4 ${
-                plan.popular 
-                  ? 'bg-black text-inspire-yellow hover:bg-gray-800' 
-                  : 'bg-inspire-yellow text-black hover:bg-yellow-400'
-              }`}>
+              <a 
+                href="https://wa.me/5511458015401"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-4 rounded-xl font-bold transition-all duration-300 mb-4 ${
+                  plan.popular 
+                    ? 'bg-black text-inspire-yellow hover:bg-gray-800' 
+                    : 'bg-inspire-yellow text-black hover:bg-yellow-400'
+                }`}
+              >
                 CONTRATAR AGORA
-              </button>
+              </a>
 
               {/* Availability Link */}
               <div className="text-center">
@@ -134,9 +139,14 @@ const Plans = () => {
           <p className="text-black text-lg mb-4">
             Não sabe qual plano escolher?
           </p>
-          <button className="bg-black text-inspire-yellow px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-colors">
+          <a 
+            href="https://wa.me/5511458015401"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-inspire-yellow px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-colors"
+          >
             FALE COM UM CONSULTOR
-          </button>
+          </a>
         </div>
       </div>
     </section>

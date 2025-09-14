@@ -18,8 +18,7 @@ const Header = () => {
     { name: 'Início', href: '#inicio' },
     { name: 'Quem somos', href: '#quem-somos' },
     { name: 'Planos', href: '#planos' },
-    { name: 'Cobertura', href: '#cobertura' },
-    { name: 'Indique e Ganhe', href: '#indique' },
+    { name: 'Área do Assinante', href: 'https://crm.inspirenet.com.br/central_assinante_web/login', external: true },
     { name: 'Contato', href: '#contato' },
   ];
 
@@ -32,9 +31,15 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <span className="text-black font-bold text-sm">#vemparainspire</span>
           <div className="flex space-x-3">
-            <Facebook className="w-5 h-5 text-black hover:text-inspire-gray cursor-pointer transition-colors" />
-            <Instagram className="w-5 h-5 text-black hover:text-inspire-gray cursor-pointer transition-colors" />
-            <Users className="w-5 h-5 text-black hover:text-inspire-gray cursor-pointer transition-colors" />
+            <a href="https://www.facebook.com/inspirenetoficial" target="_blank" rel="noopener noreferrer">
+              <Facebook className="w-5 h-5 text-black hover:text-inspire-gray cursor-pointer transition-colors" />
+            </a>
+            <a href="https://www.instagram.com/inspirenetoficial/#" target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-5 h-5 text-black hover:text-inspire-gray cursor-pointer transition-colors" />
+            </a>
+            <a href="https://crm.inspirenet.com.br/central_assinante_web/login" target="_blank" rel="noopener noreferrer">
+              <img src="/src/assets/user-icon.png" alt="Área do Assinante" className="w-5 h-5 hover:opacity-75 cursor-pointer transition-opacity" />
+            </a>
           </div>
         </div>
       </div>
@@ -44,12 +49,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="text-inspire-yellow text-2xl font-black">
-              inspire
-            </div>
-            <div className="w-6 h-6 bg-inspire-yellow rounded-full flex items-center justify-center">
-              <div className="w-2 h-2 bg-black rounded-full"></div>
-            </div>
+            <img src="/src/assets/inspire-logo.png" alt="Inspire" className="h-8" />
           </div>
 
           {/* Desktop Menu */}
@@ -58,6 +58,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
+                {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
                 className="text-white hover:text-inspire-yellow transition-colors duration-300 font-medium"
               >
                 {item.name}
@@ -66,9 +67,14 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <button className="hidden lg:block bg-inspire-yellow text-black px-6 py-2 rounded font-bold hover:bg-yellow-400 transition-colors duration-300">
+          <a 
+            href="https://wa.me/5511458015401" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden lg:block bg-inspire-yellow text-black px-6 py-2 rounded font-bold hover:bg-yellow-400 transition-colors duration-300"
+          >
             Assine já!
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -86,15 +92,21 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
+                {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
                 className="block text-white hover:text-inspire-yellow transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </a>
             ))}
-            <button className="w-full bg-inspire-yellow text-black px-6 py-3 rounded font-bold mt-4">
+            <a 
+              href="https://wa.me/5511458015401" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full bg-inspire-yellow text-black px-6 py-3 rounded font-bold mt-4 block text-center"
+            >
               Assine já!
-            </button>
+            </a>
           </nav>
         )}
       </div>

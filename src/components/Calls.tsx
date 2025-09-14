@@ -37,9 +37,14 @@ const Calls = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="bg-black text-inspire-yellow px-8 py-3 rounded font-bold hover:bg-gray-800 transition-colors">
-              PLANOS
-            </button>
+            <a 
+              href="https://wa.me/5511458015401"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black text-inspire-yellow px-8 py-3 rounded font-bold hover:bg-gray-800 transition-colors"
+            >
+              CONTRATAR AGORA
+            </a>
           </div>
 
           {/* Right Image */}

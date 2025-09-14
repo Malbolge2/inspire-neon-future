@@ -64,13 +64,21 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group bg-black text-inspire-yellow px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
+              <a 
+                href="#planos"
+                className="group bg-black text-inspire-yellow px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105"
+              >
                 <span>VER PLANOS</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="border-2 border-black text-black px-8 py-4 rounded-xl font-bold hover:bg-black hover:text-inspire-yellow transition-all duration-300">
+              </a>
+              <a 
+                href="https://wa.me/5511458015401"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-black text-black px-8 py-4 rounded-xl font-bold hover:bg-black hover:text-inspire-yellow transition-all duration-300"
+              >
                 FALAR COM CONSULTOR
-              </button>
+              </a>
             </div>
           </div>
 
@@ -78,8 +86,8 @@ const Hero = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Mulher feliz usando smartphone com conexão de alta velocidade"
+                src="/src/assets/hero-woman-laptop.jpg" 
+                alt="Mulher usando internet de alta velocidade em laptop"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
               {/* Floating elements */}

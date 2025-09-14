@@ -19,8 +19,8 @@ const Streaming = () => {
           <div className="relative animate-slide-in-left">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Pessoa assistindo streaming com qualidade 4K"
+                src="/src/assets/family-internet.jpg" 
+                alt="Família assistindo streaming com internet de alta velocidade"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
               
@@ -80,9 +80,14 @@ const Streaming = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="bg-inspire-yellow text-black px-8 py-4 rounded-xl font-bold hover:bg-yellow-400 transition-all duration-300 hover:scale-105">
-              VER PLANOS PARA STREAMING
-            </button>
+            <a 
+              href="https://wa.me/5511458015401"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-inspire-yellow text-black px-8 py-4 rounded-xl font-bold hover:bg-yellow-400 transition-all duration-300 hover:scale-105"
+            >
+              CONTRATAR AGORA
+            </a>
           </div>
         </div>
       </div>
